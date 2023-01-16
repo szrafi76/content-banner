@@ -27,47 +27,37 @@ useEffect(()=>{
 // console.log("data:",data)
   return (
     <div className="main">
-      
 
-    
     <div className="container">
 
+      <h1 className="heading">Naga Mojo Jhal Is Onn...</h1>
 
-      <h1>Naga Mojo Jhal Is Onn...</h1>
-      <p>Contain No Sugar And Are Flavoured Instead With Low-Calorine Sweetness</p>
-    
+    <p className="paragraph">Contain No Sugar And Are Flavoured Instead With Low-Calorine Sweetness</p>
 
       <div className='tags'>
 
       <span>Speed Dehydration</span>
-      
+
       <span>Electrolytes</span>
-    
+
       <span>Supply Carbohydrate</span>
-    
+
       <span>Fruits Pulp</span>
-  
-      </div>
 
+       </div>
 
-      <div>
-         <span> 
-               Ratting
-         </span>
-      </div>
+    <div className="rating">  Ratting </div>
 
-      
-    <div  className='cart'>
-    <button>Add To Cart</button>
+    <button  className='cart'> ADD TO CART</button>
+
     </div>
+
+   <div className='parallax'> Hero parallax for urmi</div>
+
     </div>
-    
 
-    <div className='parallax'> Hero parallax for urmi</div>
-
-    </div> 
-  );
-}
+     )
+  }
 
 export default App;
 
