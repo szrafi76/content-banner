@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.container{
+
+  display: flex;
+ flex-direction: column;
+ gap: .5rem;
+ grid-column: 1/2;
+color: aliceblue;
+margin: 2rem 6rem;
+
+}
+h1{width: 300px;
+   font-size: 50px;
+   margin-bottom: 0px;
+}
+p{width: 300px;
+  font-size: 25px;
+}
+
+.tags{
+  width: 300px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+.tags span{
+  padding: 5px ;
+  border: 1px solid #f9fafc;
+  border-radius: 5px;
+}
+
+.cart button{
+  color: #f9fafc;
+  background-color: #ff3300;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #010800;
+
+}
+
+
+
+.parallax{
+  color: #f9fafc;
+  grid-column: 2/3;
+}
