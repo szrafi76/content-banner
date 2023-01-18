@@ -1,0 +1,17 @@
+.containers{
+    position: relative;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+}
+.card{
+    padding: 0px;
+    box-sizing: border-box;
+    width: 20%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.image img{
+        width: 100%;
+}

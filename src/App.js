@@ -1,31 +1,24 @@
 import { useState ,useEffect } from 'react';
+import ProductWidgets from './Components/ProductWidgets/ProductWidgets';
 import './App.css';
 
 function App() {
-  const [data,setData] = useState([])
+//   const [data,setData] = useState([])
 
-  const fetchData = async () =>{
-  await  fetch('https://jsonplaceholder.typicode.com/posts')
+//   const fetchData = async () =>{
+//   await  fetch('https://jsonplaceholder.typicode.com/posts')
 
-  .then((response) => response.json())
-
-  .then((json) => {console.log(json)
-    setData(json)
-  });
-
-  }
-
-
-
-useEffect(()=>{
-  fetchData();
-  console.log("data:",data)
-},[])
+//   .then((response) => response.json())
+// useEffect(()=>{
+//   fetchData();
+//   console.log("data:",data)
+// },[])
 
 
  // fetchData();
 // console.log("data:",data)
   return (
+    <> 
     <div className="main">
 
     <div className="container">
@@ -46,8 +39,6 @@ useEffect(()=>{
 
        </div>
 
-    <div className="rating">  Ratting </div>
-
     <button  className='cart'> ADD TO CART</button>
 
     </div>
@@ -55,6 +46,10 @@ useEffect(()=>{
    <div className='parallax'> Hero parallax for urmi</div>
 
     </div>
+    <ProductWidgets />
+
+    
+    </>
 
      )
   }
